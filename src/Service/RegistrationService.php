@@ -31,7 +31,7 @@ class RegistrationService
     public function __construct(
         EntityManagerInterface $entityManager,
         UserPasswordEncoderInterface $passwordEncoder,
-        MailerIterface $mailer
+        MailerInterface $mailer
     )  {
         $this->entityManager = $entityManager;
         $this->passwordEncoder = $passwordEncoder;
